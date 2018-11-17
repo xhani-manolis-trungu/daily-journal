@@ -10,13 +10,13 @@ import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Valida
 })
 export class BookCreateComponent implements OnInit {
 
-bookForm: FormGroup;
-isbn:string='';
-title:string='';
-description:string='';
-author:string='';
-publisher:string='';
-published_year:string='';
+  bookForm: FormGroup;
+  isbn:string='';
+  title:string='';
+  description:string='';
+  author:string='';
+  publisher:string='';
+  published_year:string='';
 
   constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder) { }
 
@@ -40,5 +40,4 @@ published_year:string='';
           console.log(err);
         });
   }
-
 }

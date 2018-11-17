@@ -18,14 +18,13 @@ export class BookComponent implements OnInit {
 
   ngOnInit() {
     this.api.getBooks()
-    .subscribe(res => {
-      console.log(res);
-      this.books = res;
-    }, err => {
-      console.log(err);
-    });
+      .subscribe(res => {
+        console.log(res);
+        this.books = res;
+      }, err => {
+        console.log(err);
+      });
   }
-
 }
 
 export class BookDataSource extends DataSource<any> {
